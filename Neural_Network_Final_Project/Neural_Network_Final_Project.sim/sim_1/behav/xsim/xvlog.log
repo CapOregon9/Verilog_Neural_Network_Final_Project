@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/EEL4783_VHDL/project/code/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/EEL4783_VHDL/project/testbench/neuron_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_tb

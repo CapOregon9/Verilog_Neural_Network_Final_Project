@@ -1,0 +1,35 @@
+// Use a generate statement and a for loop to create p_width number of statements 
+// that each performs 16 bit multiplications using each input and weight  
+  
+    genvar i;
+    
+    generate
+        for(i = 0; i < p_width; i = i + 1) begin
+            assign mult[(2*(prec*(i + 1))) - 1:2*prec*i] = ip[(prec*(i + 1)) - 1:prec*i] * weights[(prec*(i + 1)) - 1:prec*i];
+        end
+    endgenerate
+    
+    
+// Use an always block and a for loop to perform the addition of the result of the
+// multiplication and the bias. 
+// Hint: use blocking statements (=) so that each statement is executed one after another
+// Hint: Vivado automatically unrolls the for loop and duplicates each statement. Use this
+// to avoid typing all the statements manually  
+  
+    integer j;    
+    
+    //initial begin
+       //op = 16'b0;
+    //end
+   
+    always@(ip, weights, bias) begin
+        for(j = 0; j < p_width; j = j + 1) begin
+            if (j == 0) begin
+                op = 0;
+            end
+            op = op + mult[(2*prec*j+prec/2)+:prec] + bias;
+        end
+    end
+    
+//////////////////////// Code ends/////////////////////////////////////      
+endmodule

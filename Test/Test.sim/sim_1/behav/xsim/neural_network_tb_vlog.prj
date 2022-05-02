@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../code/hidden_layer.v" \
+"../../../../../code/input_layer.v" \
+"../../../../../code/neural_network.v" \
+"../../../../../code/neuron.v" \
+"../../../../../code/output_layer.v" \
+"../../../../../code/predictor.v" \
+"../../../../../testbench/neural_network_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

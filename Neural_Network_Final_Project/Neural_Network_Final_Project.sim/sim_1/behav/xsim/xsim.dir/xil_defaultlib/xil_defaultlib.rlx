@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Documents/EEL4783_VHDL/project/Neural_Network_Final_Project/Neural_Network_Final_Project.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Documents/EEL4783_VHDL/project/code/input_layer.v,1649634478,verilog,,D:/Documents/EEL4783_VHDL/project/testbench/input_layer_tb.v,,input_layer,,,,,,,,
+D:/Documents/EEL4783_VHDL/project/code/neuron.v,1649707265,verilog,,D:/Documents/EEL4783_VHDL/project/testbench/neuron_tb.v,,neuron,,,,,,,,
+D:/Documents/EEL4783_VHDL/project/testbench/input_layer_tb.v,1648534727,verilog,,,,input_layer_tb,,,,,,,,
+D:/Documents/EEL4783_VHDL/project/testbench/neuron_tb.v,1649706661,verilog,,,,neuron_tb,,,,,,,,
